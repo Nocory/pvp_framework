@@ -1,0 +1,132 @@
+
+Audacity Knows No Fear
+
+functionality to choose side
+
+funds system
+
+equip purchase
+construction rework/reenable
+mission db
+
+
+Traits to be purchased
+
+Combat Medic
+Construction Specialist
+Repair Specialist
+
+
+Rename debug module to log module?
+  Maybe misleading since logging already exists by default in A3
+
+Deployment module
+  Easy to integrate in mission
+  Base
+  Fob
+  Forward deployment
+  Choose pos in predetermined area
+  Parachute
+  Opt. parachute area
+
+Refine ambient module
+  Roadside cars
+  Civ traffic
+  Mil flyover
+
+Secondary objective module
+  Create library of objectives
+  Serves as template
+  Easy to integrate in mission
+
+Marker module
+  Fix the occasional error that occurs when players leave or join
+  Captured vehicles switch markers to new side
+  Set as “needs marker”. Script will delete any previous marker of vehicles identifier and create new one for the appropriate side
+
+Command structure module
+  Interface to see command structure
+  Listed names can be interacted with
+  OpCom can appoint officers
+  Officers get certain privileges
+
+Weather module
+  Improve function and usability
+
+Base/Safezone module
+  Refine and add functionality
+  Vehicle spawner
+  Log who attempted to fire weapon and punish
+
+Damage & Destruction module
+  Vehicle damage handling might become unnecessary with fund balancing
+  Maybe refine player wounding
+
+Object/Vehicle features module
+  Radar
+  Smoke screen
+  Self destruct
+  Missile warning
+  Make nice gui
+  Artillery
+  Replace smoke effect
+  Make artillery correspond to actual arty pieces in base if those are available
+  But delete fired rounds and replace with scripted rounds or effects
+
+Chat command module
+  Improve and add commands
+  !admin to call for assistance
+  !color / !markercolor
+  !requestofficer
+
+Admin module
+  Quickly change from battle gear to admin appearance and back
+  Scenario interface here or in its own module?
+
+Scenario/Wargame module
+  Load missions from DB
+  New improved intro outro
+  Standby mode camera pan
+  OpCom auth
+  Player side choice
+
+Core module
+  Gather up all core modules, that other ones usually depend on
+  Log / Debug
+  Chat commands
+  Per frame eventhandler
+  Script watcher
+  Maybe the small fixes module as well
+
+Cleanup/Performance module
+  Make as simple and straightforward as possible
+  Performance must not be impacted though
+  Identification
+  Add ident for passengers
+  Link with acre to show speakers in name float
+  Better dog tag check
+  Maybe floating name
+
+Respawn module
+  No longer assigns all equipment. Mainly distributes uniforms and other identifying equipment. Weapons are purchased via funds
+  Simple fade out / fade in on death
+  No long camera zoom in
+
+Funds module
+  New
+  Infantry equipment has to be repurchased on every spawn, but players can save loadouts. Maybe allow officers to set available loadout templates??
+  Players would value their life much more especially when they are carrying expensive equipment that is lost on death
+  Default equipment is very basic. Standard rifle, no optics.
+  GUI for OpCom and officers to purchase vehicles
+  Give out funds each minute?
+  Define funds starting value and value given out per hour in scenario selection
+  Limit what units can buy. Only armor can buy armored vehicles. Only inf can buy specialized inf weapons and equipment, etc
+  This way funds assigned to units are actually used for that unit and not others
+  OpCom has to sets % flow of funds like in warfare.
+  OpCom and officers can send each other funds
+  Officers are informed or can check via GUI how unit members spend funds over time
+  Officers would be careful with spending as they probably would be very reluctant to constantly ask OpCom for more funds
+  Should armor and air share funds with OpCom?? Their fund usage may vary a lot and a steady flow might not make too much sense for them. They could just coordinate usage via voice
+  Or have interface to request certain expensive vehicles that have to be approved by OpCom or someone else in a certain role
+  New players and guests should be limited in their purchasing power unless approved in GUI by officer. This means inexpensive inf loadout and no vehicles. Their max spending per life is limited by a value set by OpCom or officer. No exceptions except for veterans who are rejoining AW
+  Maybe don't include funds in final scoring after all. Would make for fun all out spending at the end for a final big clash

@@ -1,0 +1,2 @@
+pvpfw_selfdestruct_arm = compile preprocessFileLineNumbers "module_selfDestruction\client\arm.sqf";
+pvpfw_selfdestruct_disarm = compile preprocessFileLineNumbers "module_selfDestruction\client\disarm.sqf";

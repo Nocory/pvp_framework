@@ -1,0 +1,1 @@
+pvpfw_missionFlow_secondsTillSideLock = 300;

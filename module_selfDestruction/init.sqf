@@ -1,0 +1,2 @@
+if (hasInterface)then{call compile preProcessFileLineNumbers "module_selfDestruction\client\init.sqf";};
+if (isServer)then{call compile preProcessFileLineNumbers "module_selfDestruction\server\init.sqf";};

@@ -1,0 +1,1 @@
+[] call compile preProcessFileLineNumbers "module_core\commonArrays\alphabets.sqf";

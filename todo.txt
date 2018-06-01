@@ -1,0 +1,1 @@
+Override "get in" action if vehicle is occupied by hostile faction already
